@@ -1,11 +1,13 @@
-## [pyodbc](https://github.com/mkleehammer/pyodbc) is great for connecting to SQL Server databases
+## Speeding up bulk inserts using execute_many for pyodbc
 
 #### In this post
 
-- Python
+- Python 3.7+
 - SQL (T-SQL)
 
 ____
+
+### Background
 
 I am often asked to enable transfer of data from one database to another that doesn't involve the manual export of data, and manual re-insert.
 
@@ -13,11 +15,12 @@ The human-process is error prone, slow, and boring.
 
 One way to get around this is simply to use pyodbc in Python to read and write the data.
 
-- See the tips at the bottom on how I make this process more efficient
+[pyodbc](https://github.com/mkleehammer/pyodbc) is great for connecting to SQL Server databases
 
 
 ### Notes
 
+- This is not the final output I provide to clients, but a watererd down example, lacking features in many parts of the code
 - The source and the destination tables have identical schemas
 
 ____
