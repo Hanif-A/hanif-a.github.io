@@ -1,3 +1,4 @@
-### I enjoy fixing things.
+### Automation that's fast, risk-managed, and auditable.
 
-I make it faster, easier to use, and error-free, making the overall experience much more user friendly.
+
+*I have a passion for IT, coding, and data*
