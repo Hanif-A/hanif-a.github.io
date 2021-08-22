@@ -1,6 +1,6 @@
 List all tables, and indexes in a SQL Server database, and bring back their Used Space (in GB).
 
-Uses dynamic SQL
+Uses dynamic SQL, elevated rights required.
 
 ```sql
 
