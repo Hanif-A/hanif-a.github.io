@@ -81,7 +81,8 @@ def code_to_run_on_this_page():
     # Don't do anything, just redirect when they go to /text-here
     pass
 
-    redirect('/')
+    # Send a redirect back
+    return redirect('/')
 
 
 
