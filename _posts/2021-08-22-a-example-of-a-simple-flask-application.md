@@ -26,9 +26,6 @@ It has been defaulted to port 80, but you can change the port in the very last l
 ## Flask Application
 
 ```python
-
-#==================================================Config stuff====================================================
-
 import logging
 from flask import Flask, redirect
 from configparser import ConfigParser
@@ -36,7 +33,8 @@ from configparser import ConfigParser
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 
-#==================================================End Config======================================================
+#=======================================================================================
+
 
 # Start the application in global scope, on load
 app = Flask(__name__)
@@ -44,6 +42,14 @@ app = Flask(__name__)
 # If you need a configuration file, you can read it from here
 config = ConfigParser()
 config.read(r'example.ini')
+
+
+
+# Found on hanif-a.github.io
+
+
+
+#=======================================================================================
 
 
 
@@ -79,15 +85,12 @@ def code_to_run_on_this_page():
 
 
 
-#==================================================================================================================
-
+#=======================================================================================
 
 
 if __name__ == '__main__':
 	
 	app.run(debug=False, host="0.0.0.0", port=80)
-
-
 ```
 
 .ini file to include in the same folder before opening
