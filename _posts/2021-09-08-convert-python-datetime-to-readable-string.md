@@ -1,5 +1,5 @@
 
-```code python
+```python
 
 def get_duration(start_time, end_time, return_format=None):
 
