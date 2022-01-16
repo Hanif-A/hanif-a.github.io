@@ -1,0 +1,25 @@
+A simple but useful one; how to convert and display a number (decimal or whole) in Excel in to hours and minutes.
+
+This is particularly useful when you're working with data that is entered in whole or part numbers - which can be the case for many users.
+
+e.g. converting the sum of a series of cells that returns `109`,  into a displayable (and usable) string such as `1h 49m` without having to convert into time format first.
+
+And here it is:
+
+    =INT(A1/60)&"h " & MOD(A1,60) &"m"
+   
+If cell `A1` says `109`, this will display `1h 49m` - and you can change how the `h` and `m` are displayed also by simply editing the formula directly (something that custom number formatting may restrict you from doing).
+
+It returns the hours portion in the first half of the calculcation - hence the "INT" - it doesn't do any rounding.
+
+It returns the remainder with the same calculation in the second half, and converts that into a whole number, to use as minutes.
+
+Join this into a string, and you can now read it like one. Therefore, you can now use formulas such as...
+
+    ="You have " & A2 & " remaining!"
+    
+... to display...
+
+    You have 1h 49m remaining!
+    
+... without any additional conversions to time format required.
